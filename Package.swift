@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "NVActivityIndicatorView",
+    name: "NVActivityIndicatorViewPM",
     platforms: [
         .iOS(.v9),
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "NVActivityIndicatorView", targets: ["NVActivityIndicatorView"]),
-        .library(name: "NVActivityIndicatorViewExtended", targets: ["NVActivityIndicatorViewExtended"])
+        .library(name: "NVActivityIndicatorViewPM", targets: ["NVActivityIndicatorViewPM"]),
+        .library(name: "NVActivityIndicatorViewExtendedPM", targets: ["NVActivityIndicatorViewExtendedPM"])
     ],
     targets: [
-        .target(name: "NVActivityIndicatorView", path: "Sources/Base"),
-        .target(name: "NVActivityIndicatorViewExtended",
-                dependencies: ["NVActivityIndicatorView"],
+        .target(name: "NVActivityIndicatorViewPM", path: "Sources/Base"),
+        .target(name: "NVActivityIndicatorViewExtendedPM",
+                dependencies: ["NVActivityIndicatorViewPM"],
                 path: "Sources/Extended")
     ]
 )

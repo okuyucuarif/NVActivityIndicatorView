@@ -27,7 +27,7 @@
 
 #if canImport(UIKit)
 import UIKit
-import NVActivityIndicatorView
+import NVActivityIndicatorViewPM
 
 /**
  *  UIViewController conforms this protocol to be able to display NVActivityIndicatorView as UI blocker.
